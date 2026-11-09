@@ -275,17 +275,17 @@
   };
 
   /* ---------- Marquee de parceiros ---------- */
-  const L = 'https://lincourt.co/assets/';
+  const L = 'assets/img/parceiros/';
   const partners = [
-    ['Porcão', 'porcao-DY8258K1.png'], ['Colégio Batista', 'colegio-batista-9XQJ6ruF.png'], ['Light', 'light-D34ClmTe.png'],
-    ['BH Harley-Davidson', 'harley-davidson-BppPEAtT.png'], ['Minas Tchê', 'minas-tche-BR98bQW6.jpg'], ['FAEMG Clube', 'faemg-clube-CciBh040.png'],
-    ['Super Globo', 'super-globo-Dm1nwn48.png'], ['Cruzeiro', 'cruzeiro-Cnj2PUru.png'], ['Taça das Favelas', 'taca-favelas-C4OWCQR3.png'],
-    ['Vino', 'vino-new-DnWIOVlk.jpeg'], ['Parque Guanabara', 'parque-guanabara-DIt8uyit.avif'],
-    ['Pimenta', 'pimenta-6cF9h04p.png'], ['4infra', '4infra-BimB3C9k.png'], ['Líder Bebedouros', 'lider-BnNaJRij.png'],
-    ['Academia do Galo', 'galo-buritis-Dicz3B11.png'], ['SINPEF', 'sinpef-05D9AgkC.webp'], ['Cuidar de Conexões', 'conexoes-DxlBoUpI.webp'],
-    ['New Era', 'new-era-C2_nuK87.png'], ['IndiaBrazil', 'indiabrazil-C6a117ts.jpg'], ['Orbi Conecta', 'orbi-conecta-BI1HjF92.png'],
-    ['MyBox', 'mybox-TT9sn4nD.png'], ['Tecnosys', 'tecnosys-DRDEeBUw.jpeg'], ['Expo Favela Innovation', 'expo-favela-innovation-DsPpUY1m.png'],
-    ['Universo AGV', 'universo-agv-CzYwhPV5.png']
+    ['Porcão', 'porcao.png'], ['Colégio Batista', 'colegio-batista.png'], ['Light', 'light.png'],
+    ['BH Harley-Davidson', 'harley-davidson.png'], ['Minas Tchê', 'minas-tche.jpg'], ['FAEMG Clube', 'faemg-clube.png'],
+    ['Super Globo', 'super-globo.jpg'], ['Cruzeiro', 'cruzeiro.png'], ['Taça das Favelas', 'taca-favelas.png'],
+    ['Vino', 'vino.jpeg'], ['Parque Guanabara', 'parque-guanabara.avif'],
+    ['Pimenta', 'pimenta.png'], ['4infra', '4infra.png'], ['Líder Bebedouros', 'lider.png'],
+    ['Academia do Galo', 'galo-buritis.png'], ['SINPEF', 'sinpef.webp'], ['Cuidar de Conexões', 'conexoes.webp'],
+    ['New Era', 'new-era.png'], ['IndiaBrazil', 'indiabrazil.jpg'], ['Orbi Conecta', 'orbi-conecta.png'],
+    ['MyBox', 'mybox.png'], ['Tecnosys', 'tecnosys.jpeg'], ['Expo Favela Innovation', 'expo-favela-innovation.png'],
+    ['Universo AGV', 'universo-agv.png']
   ];
   // ajustes finos por logo: inv = logo branco (vira escuro), box = logo com fundo próprio, s = escala
   const LOGO_FX = {"porcao": "s:1.45", "harley": "s:1.4", "minas-tche": "s:1.55", "super-globo": "box s:.85", "cruzeiro": "inv", "vino": "box s:.85", "parque": "s:1.1", "pimenta": "box s:.85", "4infra": "s:1.15", "lider": "s:1.1", "conexoes": "inv", "new-era": "s:1.1", "tecnosys": "box s:.85"};

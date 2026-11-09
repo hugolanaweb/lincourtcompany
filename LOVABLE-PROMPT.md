@@ -40,7 +40,7 @@ Se o Lovable cortar a resposta no meio, peça "continue a conversão a partir da
 
 ## Caminho B: só o prompt (sem GitHub)
 
-Anexe na mesma mensagem do prompt todos os 22 arquivos de `site/assets/img/`. O próprio prompt já manda o Lovable salvá-los em `public/assets/img/` com os mesmos nomes. O prompt é longo; se o Lovable recusar pelo tamanho, mande primeiro a parte 1 (base + hero + números + manifesto) e depois a parte 2 (do Serviços em diante).
+Anexe na mesma mensagem do prompt os 22 arquivos soltos de `site/assets/img/` e os 24 logos de `site/assets/img/parceiros/`. O próprio prompt já manda o Lovable salvá-los em `public/assets/img/` e `public/assets/img/parceiros/` com os mesmos nomes. Se o Lovable limitar o número de anexos, mande os logos numa segunda mensagem: "Salve estes logos em public/assets/img/parceiros/ com os mesmos nomes e use no marquee de parceiros". O prompt é longo; se o Lovable recusar pelo tamanho, mande primeiro a parte 1 (base + hero + números + manifesto) e depois a parte 2 (do Serviços em diante).
 
 ```
 Crie a landing page da Lincourt Company, uma agência de comunicação e marketing guiada por dados (BH e SP). Tudo em português do Brasil. Página única, sem tela de loading, rápida, com animações suaves no estilo de agência premium.
@@ -48,6 +48,7 @@ Crie a landing page da Lincourt Company, uma agência de comunicação e marketi
 IMAGENS ANEXADAS (faça isto primeiro)
 Salve todas as imagens que anexei nesta mensagem em public/assets/img/, mantendo EXATAMENTE os mesmos nomes de arquivo, sem renomear, sem converter e sem trocar a extensão. No código, use sempre o caminho /assets/img/NOME. Os arquivos são:
 icon.svg, logo-vidro-3d.webp, logo-vidro.webp, m-arrow.webp, m-badge.webp, m-banner-arrow.webp, m-banner.webp, m-billboard.webp, m-buttons.webp, m-figure.webp, m-glass-cover.webp, m-glass.webp, m-notebook.webp, m-post1.webp, m-post2.webp, m-smoke-face.webp, texture-1.webp, texture-2.webp, texture-3.webp, texture-4.webp, texture-5.webp, texture-6.webp.
+Os logos dos parceiros vão em public/assets/img/parceiros/ (caminho /assets/img/parceiros/NOME), também com os mesmos nomes: porcao.png, colegio-batista.png, light.png, harley-davidson.png, minas-tche.jpg, faemg-clube.png, super-globo.jpg, cruzeiro.png, taca-favelas.png, vino.jpeg, parque-guanabara.avif, pimenta.png, 4infra.png, lider.png, galo-buritis.png, sinpef.webp, conexoes.webp, new-era.png, indiabrazil.jpg, orbi-conecta.png, mybox.png, tecnosys.jpeg, expo-favela-innovation.png, universo-agv.png.
 Se faltar algum, avise e use um placeholder roxo (#1b002d) no lugar até eu enviar. Não gere imagens novas nem use bancos de imagem.
 
 STACK E REGRAS
@@ -195,7 +196,7 @@ COMPONENTES BASE
 - Eyebrow "Quem confia em nós" e H2 centralizado "Marcas que **cresceram com a Lincourt**".
 - Dois marquees infinitos, um para cada lado (48s e 54s), que pausam no hover e têm máscara de fade nas laterais.
 - Os logos ficam em chips de 200x110 com fundo --paper, radius 18px, em cinza com multiply. No hover, sobem 4px e ficam coloridos.
-- Parceiros: Porcão, Colégio Batista, Light, BH Harley-Davidson, Minas Tchê, FAEMG Clube, Super Globo, Cruzeiro, Taça das Favelas, Vino, Parque Guanabara, Pimenta, 4infra, Líder Bebedouros, Academia do Galo, SINPEF, Cuidar de Conexões, New Era, IndiaBrazil, Orbi Conecta, MyBox, Tecnosys, Expo Favela Innovation, Universo AGV. Os logos estão em lincourt.co/assets; por enquanto, use placeholders com o nome.
+- Parceiros: Porcão, Colégio Batista, Light, BH Harley-Davidson, Minas Tchê, FAEMG Clube, Super Globo, Cruzeiro, Taça das Favelas, Vino, Parque Guanabara, Pimenta, 4infra, Líder Bebedouros, Academia do Galo, SINPEF, Cuidar de Conexões, New Era, IndiaBrazil, Orbi Conecta, MyBox, Tecnosys, Expo Favela Innovation, Universo AGV. Cada logo usa o arquivo de /assets/img/parceiros/ com o mesmo nome do parceiro (ex.: Porcão = porcao.png, Academia do Galo = galo-buritis.png, Cuidar de Conexões = conexoes.webp, Líder Bebedouros = lider.png). Ajustes por logo: porcao escala 1.45, harley 1.4, minas-tche 1.55, super-globo box 0.85, cruzeiro invertido, vino box 0.85, parque 1.1, pimenta box 0.85, 4infra 1.15, lider 1.1, conexoes invertido, new-era 1.1, tecnosys box 0.85 (invertido = logo branco que vira escuro; box = logo com fundo próprio).
 
 11. CTA FINAL (id "contato", fundo --ink com blobs roxos)
 - Grid 1.3fr | 1fr.
@@ -230,5 +231,5 @@ COMPONENTES BASE
 ## Dicas
 
 - Depois de gerar, compare com o protótipo local (`site/index.html`) e peça os ajustes seção por seção ("no hero, ...").
-- Os logos dos parceiros vêm do lincourt.co. Antes de publicar, baixe-os para `public/assets/img/partners/`.
+- Os logos dos parceiros estão em `site/assets/img/parceiros/` (24 arquivos, baixados do lincourt.co). No Lovable, ficam em `public/assets/img/parceiros/`.
 - O Lovable muda os recursos com frequência. Se o menu do GitHub não estiver no lugar indicado, procure em **Settings → Integrations**.
