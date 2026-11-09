@@ -1,0 +1,11 @@
+# Arquivos-fonte da identidade visual (manual, logos, fontes originais)
+ID VISUAL/
+
+# Configuração local do Claude Code
+.claude/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
