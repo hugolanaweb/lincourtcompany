@@ -40,14 +40,14 @@ Se o Lovable cortar a resposta no meio, peça "continue a conversão a partir da
 
 ## Caminho B: só o prompt (sem GitHub)
 
-Anexe na mesma mensagem do prompt os 22 arquivos soltos de `site/assets/img/` e os 24 logos de `site/assets/img/parceiros/`. O próprio prompt já manda o Lovable salvá-los em `public/assets/img/` e `public/assets/img/parceiros/` com os mesmos nomes. Se o Lovable limitar o número de anexos, mande os logos numa segunda mensagem: "Salve estes logos em public/assets/img/parceiros/ com os mesmos nomes e use no marquee de parceiros". O prompt é longo; se o Lovable recusar pelo tamanho, mande primeiro a parte 1 (base + hero + números + manifesto) e depois a parte 2 (do Serviços em diante).
+Anexe na mesma mensagem do prompt os 24 arquivos soltos de `site/assets/img/` e os 24 logos de `site/assets/img/parceiros/`. O próprio prompt já manda o Lovable salvá-los em `public/assets/img/` e `public/assets/img/parceiros/` com os mesmos nomes. Se o Lovable limitar o número de anexos, mande os logos numa segunda mensagem: "Salve estes logos em public/assets/img/parceiros/ com os mesmos nomes e use no marquee de parceiros". O prompt é longo; se o Lovable recusar pelo tamanho, mande primeiro a parte 1 (base + hero + números + manifesto) e depois a parte 2 (do Serviços em diante).
 
 ```
 Crie a landing page da Lincourt Company, uma agência de comunicação e marketing guiada por dados (BH e SP). Tudo em português do Brasil. Página única, sem tela de loading, rápida, com animações suaves no estilo de agência premium.
 
 IMAGENS ANEXADAS (faça isto primeiro)
 Salve todas as imagens que anexei nesta mensagem em public/assets/img/, mantendo EXATAMENTE os mesmos nomes de arquivo, sem renomear, sem converter e sem trocar a extensão. No código, use sempre o caminho /assets/img/NOME. Os arquivos são:
-icon.svg, logo-vidro-3d.webp, logo-vidro.webp, m-arrow.webp, m-badge.webp, m-banner-arrow.webp, m-banner.webp, m-billboard.webp, m-buttons.webp, m-figure.webp, m-glass-cover.webp, m-glass.webp, m-notebook.webp, m-post1.webp, m-post2.webp, m-smoke-face.webp, texture-1.webp, texture-2.webp, texture-3.webp, texture-4.webp, texture-5.webp, texture-6.webp.
+icon.svg, logo-lincourt-horizontal.svg, logo-lincourt-horizontal-roxo.svg, logo-vidro-3d.webp, logo-vidro.webp, m-arrow.webp, m-badge.webp, m-banner-arrow.webp, m-banner.webp, m-billboard.webp, m-buttons.webp, m-figure.webp, m-glass-cover.webp, m-glass.webp, m-notebook.webp, m-post1.webp, m-post2.webp, m-smoke-face.webp, texture-1.webp, texture-2.webp, texture-3.webp, texture-4.webp, texture-5.webp, texture-6.webp.
 Os logos dos parceiros vão em public/assets/img/parceiros/ (caminho /assets/img/parceiros/NOME), também com os mesmos nomes: porcao.png, colegio-batista.png, light.png, harley-davidson.png, minas-tche.jpg, faemg-clube.png, super-globo.jpg, cruzeiro.png, taca-favelas.png, vino.jpeg, parque-guanabara.avif, pimenta.png, 4infra.png, lider.png, galo-buritis.png, sinpef.webp, conexoes.webp, new-era.png, indiabrazil.jpg, orbi-conecta.png, mybox.png, tecnosys.jpeg, expo-favela-innovation.png, universo-agv.png.
 Se faltar algum, avise e use um placeholder roxo (#1b002d) no lugar até eu enviar. Não gere imagens novas nem use bancos de imagem.
 
@@ -82,7 +82,7 @@ COMPONENTES BASE
 1. HEADER (fixo, sempre visível: não esconde ao rolar)
 - Pílula centralizada, top 16px, largura min(100% - 32px, 1280px), 64px de altura, border-radius 999px.
 - Depois de 30px de scroll ganha fundo rgba(15,0,26,.62), borda --line-light, backdrop-filter blur(18px) e sombra.
-- À esquerda: logo "Lincourt" em SVG cor --sand, 30px de altura.
+- À esquerda: logo horizontal da Lincourt (/assets/img/logo-lincourt-horizontal.svg, cor --sand), 30px de altura. No rodapé, o mesmo logo com 36px. A versão roxa (logo-lincourt-horizontal-roxo.svg) é para fundos claros.
 - No centro: nav em pílula com borda (Serviços, Cases, Método, Lincourt, Parceiros, Blog). Links de 12px, 700, letter-spacing .14em, caixa alta. O link da seção visível fica destacado com fundo rgba(221,218,212,.1).
 - À direita: botão ghost "Solicite um diagnóstico ↗".
 - Abaixo de 1100px: some a nav e o CTA e aparece um botão hambúrguer que abre um menu mobile em tela cheia (Serviços, Cases, Método, Lincourt, Parceiros, Contato).
