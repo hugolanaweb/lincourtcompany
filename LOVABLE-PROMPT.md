@@ -40,18 +40,15 @@ Se o Lovable cortar a resposta no meio, peça "continue a conversão a partir da
 
 ## Caminho B: só o prompt (sem GitHub)
 
-Antes de mandar, anexe no chat do Lovable as imagens de `site/assets/img/`. As mais importantes são:
-
-- `logo-vidro-3d.webp`
-- `m-billboard.webp`
-- `texture-6.webp`
-- `icon.svg`
-- os `m-*.webp` do mosaico
-
-Peça que ele as salve em `public/assets/img/` com esses mesmos nomes. O prompt é longo; se o Lovable recusar pelo tamanho, mande primeiro a parte 1 (base + hero + números + manifesto) e depois a parte 2 (do Serviços em diante).
+Anexe na mesma mensagem do prompt todos os 22 arquivos de `site/assets/img/`. O próprio prompt já manda o Lovable salvá-los em `public/assets/img/` com os mesmos nomes. O prompt é longo; se o Lovable recusar pelo tamanho, mande primeiro a parte 1 (base + hero + números + manifesto) e depois a parte 2 (do Serviços em diante).
 
 ```
 Crie a landing page da Lincourt Company, uma agência de comunicação e marketing guiada por dados (BH e SP). Tudo em português do Brasil. Página única, sem tela de loading, rápida, com animações suaves no estilo de agência premium.
+
+IMAGENS ANEXADAS (faça isto primeiro)
+Salve todas as imagens que anexei nesta mensagem em public/assets/img/, mantendo EXATAMENTE os mesmos nomes de arquivo, sem renomear, sem converter e sem trocar a extensão. No código, use sempre o caminho /assets/img/NOME. Os arquivos são:
+icon.svg, logo-vidro-3d.webp, logo-vidro.webp, m-arrow.webp, m-badge.webp, m-banner-arrow.webp, m-banner.webp, m-billboard.webp, m-buttons.webp, m-figure.webp, m-glass-cover.webp, m-glass.webp, m-notebook.webp, m-post1.webp, m-post2.webp, m-smoke-face.webp, texture-1.webp, texture-2.webp, texture-3.webp, texture-4.webp, texture-5.webp, texture-6.webp.
+Se faltar algum, avise e use um placeholder roxo (#1b002d) no lugar até eu enviar. Não gere imagens novas nem use bancos de imagem.
 
 STACK E REGRAS
 - React + TypeScript + Tailwind, mas os detalhes visuais ficam em um CSS global (src/styles/lincourt.css) com variáveis CSS. Não use bibliotecas de animação: só CSS, IntersectionObserver e requestAnimationFrame.
