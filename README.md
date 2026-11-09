@@ -23,7 +23,9 @@ npx http-server site -p 5520
 
 ## Publicar
 
-A pasta `site/` pode ir direto para qualquer hospedagem estática, como GitHub Pages, Netlify, Vercel ou Hostinger.
+**Vercel:** importe este repositório em vercel.com/new. O `vercel.json` já serve a pasta `site/`: não há build e não é preciso mudar nenhuma configuração. Cada push no `main` publica de novo.
+
+A pasta `site/` também pode ir para qualquer outra hospedagem estática, como Netlify ou Hostinger.
 
 ## Pendências
 
